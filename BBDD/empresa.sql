@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-02-2020 a las 21:03:04
+-- Tiempo de generación: 19-02-2020 a las 22:14:12
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.1
 
@@ -115,10 +115,10 @@ INSERT INTO `proveedores` (`id`, `cedula`, `nombre`, `apellidos`, `direccion`, `
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `servicios_sistemas`
+-- Estructura de tabla para la tabla `servicio_sistemas`
 --
 
-CREATE TABLE `servicios_sistemas` (
+CREATE TABLE `servicio_sistemas` (
   `id` int(11) NOT NULL,
   `responsable` varchar(90) NOT NULL,
   `contacto` text NOT NULL,
@@ -131,11 +131,11 @@ CREATE TABLE `servicios_sistemas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `servicios_sistemas`
+-- Volcado de datos para la tabla `servicio_sistemas`
 --
 
-INSERT INTO `servicios_sistemas` (`id`, `responsable`, `contacto`, `actividad`, `tiempo`, `costo`, `fecha_requerimiento`, `fecha_entrega`, `ESTADO`) VALUES
-(1, 'OSCAR IVAN GONZALEZ PENA', 'oigonzalez83@misena.edu.co 322 8858439', 'SISTEMA DE INFORMACION PARA LA EMPRESA', '64 HORAS', '800.000', '19 02 2020', '26 02 2020', 'EN PROCESO');
+INSERT INTO `servicio_sistemas` (`id`, `responsable`, `contacto`, `actividad`, `tiempo`, `costo`, `fecha_requerimiento`, `fecha_entrega`, `ESTADO`) VALUES
+(1, 'OSCAR IVAN GONZALEZ PENA', 'oigonzalez83@misena.edu.co 3228858439', 'SISTEMA DE INFORMACION PARA LA EMPRESA', '64 HORAS', '800.000', '19 02 2020', '26 02 2020', 'EN PROCESO');
 
 --
 -- Índices para tablas volcadas
@@ -160,9 +160,9 @@ ALTER TABLE `proveedores`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `servicios_sistemas`
+-- Indices de la tabla `servicio_sistemas`
 --
-ALTER TABLE `servicios_sistemas`
+ALTER TABLE `servicio_sistemas`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -188,9 +188,9 @@ ALTER TABLE `proveedores`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT de la tabla `servicios_sistemas`
+-- AUTO_INCREMENT de la tabla `servicio_sistemas`
 --
-ALTER TABLE `servicios_sistemas`
+ALTER TABLE `servicio_sistemas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
